@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RugPull Simulator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>RugGuard ⚠️</h1>
+    <p class="subtitle">Pump.fun–style rug risk simulator</p>
+
+    <input
+      type="text"
+      placeholder="Paste token address (simulation only)"
+      id="tokenInput"
+    />
+
+    <button id="rugBtn">SIMULATE DUMP</button>
+
+    <div id="result" class="hidden">
+      <p class="risk">⚠️ High Rug Risk Detected</p>
+      <div class="bar">
+        <div class="fill"></div>
+      </div>
+      <p class="note">Simulation complete. No real blockchain action taken.</p>
+    </div>
+
+    <p class="disclaimer">
+      Educational simulation only. Not financial advice. No real tokens affected.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
